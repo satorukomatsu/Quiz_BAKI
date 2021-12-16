@@ -3,12 +3,24 @@
 }
 
 .topImage {
-  width: 100%;
-  height: 100vh;
-  opacity: 0.3;
+  img {
+    width: 100%;
+    height: 100vh;
+    object-fit: contain;
+  }
+  .startButton {
+    width: 40%;
+    Link {
+      text-decoration: none;
+    }
+  }
 }
 
 .quizIndex {
   text-align: center;
   margin-top: 100px;
+}
+
+.resultIndex {
+  text-align: center;
 }
