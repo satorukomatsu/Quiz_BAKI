@@ -2,18 +2,30 @@
   margin: 0;
 }
 
+.topImage {
+  text-align: center;
+}
+
 .topImage img {
-  width: 100%;
-  height: 100vh;
-  -o-object-fit: contain;
-     object-fit: contain;
+  margin: 10% auto;
 }
 
-.topImage .startButton {
+.topImage h1 {
+  margin-bottom: 30px;
+}
+
+.topImage .button {
+  text-align: center;
+}
+
+.topImage .button Button {
   width: 40%;
+  padding: 10px;
+  margin: 20px auto;
+  display: block;
 }
 
-.topImage .startButton Link {
+.topImage .button Button Link {
   text-decoration: none;
 }
 
@@ -23,6 +35,10 @@
 }
 
 .resultIndex {
+  text-align: center;
+}
+
+.description {
   text-align: center;
 }
 /*# sourceMappingURL=App.css.map */
