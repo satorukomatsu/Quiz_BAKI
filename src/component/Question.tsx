@@ -188,9 +188,27 @@ export const Quiz = () => {
             correct: false
         },{
             text: '朱沢鋭一',
-            correct: false
+            correct: true
         }
         ]
+    }, {
+        question:
+        '範馬勇次郎と妻の朱沢江珠が最初に出会った場所はどこ？',
+        answers: [
+            { 
+                text: 'フィリピン',
+                correct: false
+            },{
+                text: 'バリ',
+                correct: true
+            },{
+                text: 'アメリカ',
+                correct: false
+            },{
+                text: '中国',
+                correct: false
+            }
+            ]
     }
     ]
 

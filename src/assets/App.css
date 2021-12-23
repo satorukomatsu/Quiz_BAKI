@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap");
 .App {
   margin: 0;
 }
@@ -7,11 +8,13 @@
 }
 
 .topImage img {
-  margin: 10% auto;
+  margin: 10% auto 5%;
 }
 
 .topImage h1 {
   margin-bottom: 30px;
+  margin-top: 0;
+  font-family: "Yuji Syuku", serif;
 }
 
 .topImage .button {

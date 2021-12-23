@@ -12,7 +12,7 @@ export const StartImage = () => {
         <CssBaseline />
         <Container className="topImage" maxWidth="sm">
             <img src={topImage} alt="topImage" />
-            <h1>クイズゲーム</h1>
+            <h1>クイズ検定試験</h1>
             <Box>
               <StartButton />
             </Box>
