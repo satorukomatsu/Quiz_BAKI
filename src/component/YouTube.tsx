@@ -3,7 +3,7 @@ import axios from "axios";
 import { useState } from "react";
 
 export const YouTube = () => {
-    const YOUTUBE_API_KEY = ''
+    const YOUTUBE_API_KEY = process.env.REACT_APP_YOUTUBE_API_KEY;
     const BAKI_PLAYLIST_ID = 'PLVs8KIyueUjUuezqLfT1w-37-dhP-AIAR'
     const url = `https://www.googleapis.com/youtube/v3/playlistItems?key=${YOUTUBE_API_KEY}&playlistId=${BAKI_PLAYLIST_ID}&part=snippet&maxResults=3`
 
