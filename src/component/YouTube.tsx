@@ -13,8 +13,9 @@ export const YouTube = () => {
         .then(response => {
             let jsonData = response.data
             setVideoId(
-                videoId = jsonData.items[0].snippet.resourceId.videoId
+                videoId = jsonData.items[1].snippet.resourceId.videoId
             )
+            console.log(jsonData)
         })
         .catch(() => {
             console.log(Error)

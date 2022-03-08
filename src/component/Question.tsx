@@ -1,9 +1,8 @@
 import React, {useState} from "react";
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import Modal from '@mui/material/Modal';
 import { Link } from "react-router-dom";
+
 
 export const Quiz = () => {
     let [quizCount, setQuizCount] = useState(0)
@@ -230,15 +229,16 @@ export const Quiz = () => {
     }
     ]
 
-    function shuffle<T>([...a]: T[]) {
-        for(let i = a.length - 1; i >= 0; i--) {
-            const j: number = Math.floor(Math.random() * (i+1));
-            [a[i], a[j]] = [a[j], a[i]];
-        }
-        return a
-    }
+    // function shuffle<T>([...a]: T[]) {
+    //     for(let i = a.length - 1; i >= 0; i--) {
+    //         const j: number = Math.floor(Math.random() * (i+1));
+    //         [a[i], a[j]] = [a[j], a[i]];
+    //     }
+    //     return a
+    // }
     
-    const shuffledQuiz = shuffle(quiz)
+    // const shuffledQuiz = shuffle(quiz)
+    
 
     // 正誤判定
     const handleAnswerQuestion = (a: {text: string, correct: boolean}) => {
@@ -251,7 +251,7 @@ export const Quiz = () => {
         
         //次の問題表示or結果表示
         const nextQuizId = quizCount + 1
-        if(nextQuizId < 10) {
+        if(nextQuizId < 12) {
             setQuizCount(quizCount + 1)
         } else {
             setResult(true)
@@ -263,7 +263,7 @@ export const Quiz = () => {
             {result ? (
             <div className="resultIndex">
                 <h1>結果発表！！！</h1>
-                <h2>今回の正解数は．．．10問中、{countCorrectAnswer}問でした！</h2>
+                <h2>今回の正解数は．．．12問中、{countCorrectAnswer}問でした！</h2>
                 <Button variant="contained" disableElevation>
                     <Link style={{ textDecoration: 'none', color: "white"}} to='/'>RETURN　TO　TOP</Link>
                 </Button>
@@ -271,8 +271,8 @@ export const Quiz = () => {
             ) : (
             <Box sx={{ '& button': { m: 1 } }}>
                 <div className="quizIndex">
-                    <h1>Q: {shuffledQuiz[quizCount].question}</h1>
-                    {shuffledQuiz[quizCount].answers.map((a) => (
+                    <h1>Q: {quiz[quizCount].question}</h1>
+                    {quiz[quizCount].answers.map((a) => (
                         <Button             
                             className="answerButton"
                             variant="outlined"

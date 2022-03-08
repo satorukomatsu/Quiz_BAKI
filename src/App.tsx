@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import './assets/App.css';
 import { Quiz } from './component/Question';
 import { StartImage } from './component/Start';

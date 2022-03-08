@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import topImage from '../images/Baki-logo.jpg'
 import { StartButton } from './StartButton';
-import { YouTube } from './YouTube';
+
 
 export const StartImage = () => {
     return (
